@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version History</title>
+    <meta name="description" content="Complete changelog of system updates and improvements">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+  <!-- Sidebar -->
+   <nav class="sidebar" id="sidebar">
+
+    <div id="sidebar-container"></div>
+
+  </nav>
+
+  <!-- Overlay (for mobile) -->
+  <div class="overlay" id="overlay"></div>
+  <div class="main-content" id="mainContent">
+  
+    <!--Main Content-->
+    <div class="container">
+        <h1>Version 0.0.2 Notes</h1>
+
+        <div class="version">
+            <h2>
+                <span>Order List and Details updates</span>
+            </h2>
+            <p>Update to Order List and Details page Visuals and functions</p>
+            <ul>
+                <li>Visual updates to Rename columns in Orders List to align with required fields</li>
+                <li>Updated Columns to allow for filters ascending and decending of rows</li>
+                <li>Updated Order Details page to display Oncard number as a Drilldown link</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Shopify Sales Updates</span>
+            </h2>
+            <p>Visual and Functional updates to Shopify Sales</p>
+            <ul>
+                <li>Update the language from "Shift Start" and "Shift End" to "Open" and "Close"</li>
+                <li>Added a "Change Due" pop-up during Cash Transactions, if change is due then Window requires manual dismissal and if no change due will auto Dismiss</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Location Page Update</span>
+            </h2>
+            <p>Update to Location Page to add a new Value field and toggle to add a threshold amount for Balance Builder and Create/Split Card function to bypass the hardcoded default of 60 points</p>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Minor Bug Fix</span>
+            </h2>
+            <p>Minor bug fix to round decimal values during the Create/Split Card function during Sales process</p>
+        </div>
+
+        <div class="footer" id="footer-container">
+            
+        </div>
+    </div>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>

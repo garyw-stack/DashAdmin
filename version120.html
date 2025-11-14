@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version History</title>
+    <meta name="description" content="Complete changelog of system updates and improvements">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+  <!-- Sidebar -->
+   <nav class="sidebar" id="sidebar">
+
+    <div id="sidebar-container"></div>
+
+  </nav>
+
+  <!-- Overlay (for mobile) -->
+  <div class="overlay" id="overlay"></div>
+  <div class="main-content" id="mainContent">
+  
+    <!--Main Content-->
+    <div class="container">
+        <h1>Version 1.2.0 Notes</h1>
+        <h2 class="live">Current Live Version</h2>
+
+        <div class="version">
+            <h2>
+                <span>Charge Card Updates</span>
+            </h2>
+            <p>Updates to Charge Card Information and Functionality</p>
+            <ul>
+                <li>Update to Charge Card window(s) to now cancel termial transaction if exited</li>
+                <li>Update to Payjunction Invoice numbers based on the device name and order number</li>
+                <li>Updates Transaction Tables for Charge Cards to mirror Kiosk Tables</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Order and Sales Screen Workflow </span>
+            </h2>
+            <p>Updates to Workflows and Sales Screen Functionality</p>
+            <ul>
+                <li>Update Sales workflow to continue working properly in the absence of a receipt printer</li>
+                <li>Update to functionality of "Custom Payment" field to prevent mischarging customer a lower amount on their transaction</li>
+                <li>Update Receipt to Display Order Number as "Trans #" instead of Item Count</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Visual and Functional Updates</span>
+            </h2>
+            <p>Below is a list of Visual and Functional updates created in previous Versions.  </p>
+            <ul>
+                <li>Update to Quick Pay options in Shopify Sales to prevent double tapping</li>
+                <li>Update “Dismiss” button in Change owed window to “Open Cash Drawer”</li>
+                <li>Updates to prevent leaving checkout page during Charge Card Transactions</li>
+                <li>Updates to fixed missed information from Orders</li>
+            </ul>
+        </div>
+
+        <div class="footer" id="footer-container">
+            
+        </div>
+    </div>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>
