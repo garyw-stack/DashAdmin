@@ -7,14 +7,16 @@
   // === EDIT THIS MENU ONLY ===
   const menuItems = [
     { href: 'index.html', text: 'Verison Overview' },
-    //{ href: 'versionunknown.html', text: 'Version Unknown' },
-    //{ href: 'version127.html', text: 'Version 1.2.7' },
-    //{ href: 'version126.html', text: 'Version 1.2.6' },
-    //{ href: 'version125.html', text: 'Version 1.2.5' },
-    //{ href: 'version124.html', text: 'Version 1.2.4' },
-    //{ href: 'version123.html', text: 'Version 1.2.3' },
-    //{ href: 'version122.html', text: 'Version 1.2.2' },
-    //{ href: 'version121.html', text: 'Version 1.2.1' },
+    { href: 'versionunknown.html', text: 'Version Unknown' },
+    { href: 'version129.html', text: 'Version 1.2.9' },
+    { href: 'version128.html', text: 'Version 1.2.8' },
+    { href: 'version127.html', text: 'Version 1.2.7' },
+    { href: 'version126.html', text: 'Version 1.2.6' },
+    { href: 'version125.html', text: 'Version 1.2.5' },
+    { href: 'version124.html', text: 'Version 1.2.4' },
+    { href: 'version123.html', text: 'Version 1.2.3' },
+    { href: 'version122.html', text: 'Version 1.2.2' },
+    { href: 'version121.html', text: 'Version 1.2.1' },
     { href: 'version120.html', text: 'Version 1.2.0' },
     { href: 'version113.html', text: 'Version 1.1.3' },
     { href: 'version112.html', text: 'Version 1.1.2' },
@@ -128,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  // Edit Below 
    const footerText = `
-   Version history last updated: <strong>December 12, 2025</strong> • Maintained with care
+   Version history last updated: <strong>December 20, 2025</strong> • Maintained with care
     `;
 
   container.innerHTML = `
@@ -138,6 +140,24 @@ document.addEventListener('DOMContentLoaded', () => {
    `;
   });
 
+//Accordion for Milestones
 
-
-
+  const coll = document.getElementsByClassName("collapsible");
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active1");
+            const content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                // Close others first (accordion behavior)
+                for (let j = 0; j < coll.length; j++) {
+                    if (j !== i) {
+                        coll[j].classList.remove("active1");
+                        coll[j].nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
